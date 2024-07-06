@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/gameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="20dp">
+
+        <!-- 9 Buttons for Tic Tac Toe grid -->
+        <Button android:id="@+id/button0" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button1" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button2" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button3" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button4" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button5" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button6" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button7" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button8" style="@style/TicTacToeButton" />
+
+    </GridLayout>
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Reset Game" />
+
+</LinearLayout>
